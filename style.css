@@ -35,6 +35,11 @@
 }
 .nav__links{
   list-style-type: none;
+   height: 0;
+  overflow: hidden;
+  -webkit-transition: all 2s linear;
+  transition: all 2s linear;
+
 
 }
 .nav__single-link{
@@ -56,13 +61,8 @@
   padding-left: 1.5rem;
   cursor: pointer;
 }
-/*  */
-.nav__links{
-  height: 0;
-  overflow: hidden;
-  -webkit-transition: all 2s linear;
-  transition: all 2s linear;
-}
+
+
 .show__links{
   height: 288px;
 }
@@ -153,7 +153,7 @@
   margin-top: 300px;
   margin-left: 496px;
  color:white;
- -webkit-transition: all 2s linear;
+ -webkit-transition: all 2s linear; /*webkit for transition 2s linear*/
 }
 .typewriter h1 {
   max-width: 440px;
@@ -225,7 +225,7 @@
  height: 100%;
  position: relative;
 }
-.about-img:before{
+.about-img:before{ /* grey bg behind img */
  content: "";
  background: #899495;
  width: 100%;
@@ -244,7 +244,7 @@
  text-transform: capitalize;
  letter-spacing: 8px;
  letter-spacing: 0.5rem;
- background: url('title-bcg.svg')no-repeat;
+ 
  color: white;
 }
 .about-info__text{
@@ -358,17 +358,17 @@
 
 .article.services__single-service:hover{
   background: #fff;
- color:#181b24 !important;
+ 
  
 }
 .services__single-service >p:hover{
  background: #fff;
- color:#181b24 !important;
+ color:#181b24 !important; 
  
  
 }
 .services__single-service >h2:hover{
- background: #fff;
+ background: #fff;/* priority basis consider this colour, if overriding*/
  color:#181b24 !important;
  
  
@@ -405,16 +405,7 @@
  letter-spacing: 0.2rem;
 }
 
-.services__single-service-text:hover{
- width: 80%;
- margin: 0 auto;
- text-align: left;
-  background: transparent;
- color:#181b24;
- line-height: 1.5;
- letter-spacing: 3.2px;
- letter-spacing: 0.2rem;
-}
+
 @media screen and (min-width:768px){
  .services__center{
   display: -webkit-box;
@@ -532,9 +523,7 @@ opacity: 0;
 } 
 
 end of projects  */
-.hr{
-  color: grey;
-}
+
 /* projects  */
 .projects{
   padding: 28px 0;
@@ -745,6 +734,3 @@ opacity: 0;
 .footer__single-icon:hover{
   color: #899495
 }
-
-
-

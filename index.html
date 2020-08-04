@@ -1,96 +1,302 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link href='http://fonts.googleapis.com/css?family=Roboto+Mono:400,700' rel='stylesheet' type='text/css'>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+ <title>Sajal Gupta</title>
+ <!-- main css -->
+ <link rel="stylesheet" href="style.css">
+ <!-- font-awesome -->
+ 
+</head>
+
+<body>
+ <header class="header">
+  <!-- first child -->
+  <nav class="nav">
+   <!-- nav header -->
+   <div class="nav__header">
+    <!--img src="img/logo.svg" alt="" class="nav__logo"-->
+    <span class="nav__btn">
+     <i class="far fa-hand-point-down"></i>
+    </span>
+   </div>
+   <!-- nav links -->
+   <ul class="nav__links">
+    <li>
+     <a href="#home" class="nav__single-link">home</a>
+    </li>
+    <li>
+     <a href="#about" class="nav__single-link">about</a>
+    </li>
     
-    <title>Sajal Gupta</title>
-
-
-    <style>
-      @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,700i');
-      html{font-family: 'Roboto', monospace;}
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-      }
-hr.new1 {
-  border-top: 1px solid white;
-}
-body{
-  font-family: 'Roboto', 'monospace';
-  background-color: #000000;
-}
-
-      .footer.text-muted{
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        /* Set the fixed height of the footer here */
-        height: 60px;
-       border-top: 3px solid #F37A1D;
-      }
-
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-
-    </style>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous" >
-     
-  </head>
-  <body class="pushmenu-push  text-white" style="background-color:#000000;">
-    <header>
-      <nav class="navbar  navbar-expand-lg navbar-dark bg-dark text-white" style="background-color:#ffffff;">
-      <a class="navbar-brand" href="{% url 'home'%}">sajal0603</a>
-
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav ml-auto">
-          <a class="nav-item nav-link active" href="{% url 'home' %}">Home </a>
-
-          <a class="nav-item nav-link" href="https://github.com/sajalgupta1">Github</a>
-          <a class="nav-item nav-link" href="https://www.linkedin.com/in/sajal-gupta-7365b614a/">LinkedIn</a>
-
-
-        </div>
-
-      </div>
-    </nav>
-</header>
-
-<main role="main">
-
-
-<br><br>
-    <div class="container">
-
-<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src="1.jpg" height="200" width="200" align="middle" /><hr>
-      <h1 class="jumbotron-heading pt-2"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSajal Gupta</h1>
-      <div class="ccc pt-2 pl-2 pr-2 text-white">
-      <p class="lead text-white">I hail from New Delhi, India. I am a third year Undergraduate pursuing B.Tech in Engineering Physics from Delhi Technological University and I am a coder. I am a goal-oriented and an ambitious personality actively looking for awesome opportunities in Software Development. Feel free to surf my interests and projects!</p><hr>
-      <p>
-        <a href="about.html" class="btn btn-outline-primary my-2 pl-2">About Me </a>
-        &nbsp <a href="mailto:sajal.gupta6397@gmail.com" class="btn btn-outline-primary my-2 pl-2">Contact</a>
-        &nbsp <a href="{% static 'Resume_SajalGupta.pdf' %}" class="btn btn-outline-primary my-2">Resume</a>
-
-      </p>
-    </div>
-    </div>
-
-
-<footer class="text-muted">
-  <div class="container text-center pt-5">
-    <p><br><br> <br> <hr> Ⓒ Sajal Gupta <hr>
-    </p>
+    <!--li>
+     <a href="#" class="nav__single-link">numbers</a>
+    </li-->
+    <li>
+     <a href="#proj" class="nav__single-link">projects</a>
+    </li>
+    <li>
+     <a href="#contact" class="nav__single-link">contact</a>
+    </li>
+   </ul>
+  </nav>
+<section id="home" class="typewritersd">
+  <div class="typewriter">
+    <h1>Hello, I am Sajal Gupta.</h1>
   </div>
-</footer>
+   <!-- banner container -->
+   </section>
+  <!-- second shild -->
+  <section class="banner">
+  
+   <div class="banner__container">
+    <h1 class="banner__title">i'm a clever techie</h1>
+    <h1 class="banner__jobs">
+     Software developer >>
+     <span>
+      
+     </span>
+     Designer >>
+     <span>
+      
+     </span>
+     Coding Geek
+    </h1>
+   </div>
+
+
+  </section>
+ </header>
+ <!-- end header -->
+ <!-- about section -->
+ <section id="about" class="about">
+  <div class="about__center">
+   <article class="about-img">
+    <img src="1.jpg" alt="" class="about-img__photo">
+   </article>
+   <article class="about-info">
+    <div class="about-info__container">
+     <h1 class="about-info__title">about me</h1>
+     <p class="about-info__text">I am a Software Developer and I love to code things and Algorithms! I have a keen interest in Data Structures and I am from Delhi Technological University. Feel free to surf my profile and get to know more about me!</p>
+
+
+     <div class="about-info__links">
+      <a href="mailto:sajal.gupta6397@gmail.com" class="about-info__single-link dark-btn">hire me</a>
+      <a href="Resume.pdf" class="about-info__single-link light-btn">download CV</a>
+     </div>
+
+    </div>
+   </article>
+
+  </div>
+
+
+
+ </section>
+
+
+
+
+
+ <!-- end of about section -->
+ <!-- services section -->
+ <section id="qual" class="services">
+  <!-- section title -->
+  <div class="section-title">
+   <h1 class="section-title__name">Qualities</h1> <!--services-->
+  </div>
+  <!-- end of section title -->
+  <div class="services__center">
+   <!-- single service -->
+   <article class="services__single-service">
+    <div class="services__single-service-icon">
+     <i class="fa fa-calendar-check-o"></i>
+    </div>
+    <h2 class="services__single-service-title">punctual</h2>
+
+
+   </article>
+   <!-- end single service -->
+   <!-- single service -->
+   <article class="services__single-service">
+    <div class="services__single-service-icon">
+     <i class="fa fa-user-plus"></i>
+    </div>
+    <h2 class="services__single-service-title">Optimist</h2>
+  
+
+   </article>
+   <!-- end single service -->
+   <!-- single service -->
+   <article class="services__single-service">
+    <div class="services__single-service-icon">
+     <i class="fa fa-music"></i>
+    </div>
+    <h2 class="services__single-service-title">Musician</h2>
+
+
+   </article>
+   <!-- end single service -->
+   <!-- single service -->
+   <article class="services__single-service">
+    <div class="services__single-service-icon">
+     <i class="fa fa-book"></i>
+    </div>
+    <h2 class="services__single-service-title">keen learer</h2>
+    
+   </article>
+   <!-- end single service -->
+   <!-- single service -->
+   <article class="services__single-service">
+    <div class="services__single-service-icon">
+     <i class="fa fa-code"></i>
+    </div>
+    <h2 class="services__single-service-title">Coder</h2>
+    
+   </article>
+   <!-- end single service -->
+   <!-- single service -->
+   <article class="services__single-service">
+    <div class="services__single-service-icon">
+     <i class="fa fa-camera"></i>
+    </div>
+    <h2 class="services__single-service-title">photography</h2>
+    
+   </article>
+   <!-- end single service -->
+  </div>
+
+ </section>
+ <!-- end of services section -->
+ <!-- numbers section -->
+ 
+
+   
+
+
+   <!-- end of single number -->
+   <!-- single number -->
+   
+
+
+   <!-- end of single number -->
+   <!-- single number -->
+  
+
+
+   <!-- end of single number -->
+  </div>
+ </section>
+ <!-- end of numbers section -->
+ <!-- projects section -->
+ <section id="proj" class="projects">
+  <!-- section title -->
+  <div class="section-title">
+   <h1 class="section-title__name">projects</h1>
+  </div>
+  <!-- end of section title -->
+  <div class="projects__center">
+   <!-- single project -->
+   <article class="projects__single-project">
+    <img src="weather.png" alt="portfolio" class="projects__single-project-img">
+    <a href="https://github.com/sajalgupta1/Weather_Application" class="projects__single-project-icon">
+     <img  src="search.png" alt="portfolio" class="projects__single-project-img">
+   </a>
+    
+   </article>
+
+
+
+   <!-- end of single project -->
+   <!-- single project -->
+   <article class="projects__single-project">
+    <img src="ss2.png" alt="portfolio" class="projects__single-project-img">
+    <a href="https://github.com/sajalgupta1/Covid19_TrackerWebsite" class="projects__single-project-icon"><i class="fas fa-search"></i>
+      <img  src="search.png" alt="portfolio" class="projects__single-project-img">
+    </a>
+   </article>
+
+
+
+   <!-- end of single project -->
+   <!-- single project -->
+   <article class="projects__single-project">
+    <img src="tnp.png" alt="portfolio" class="projects__single-project-img">
+    <a href="https://github.com/sajalgupta1/TnP_DTU_website" class="projects__single-project-icon">
+     <img src="search.png" alt="portfolio" class="projects__single-project-img">
+    </a>
+   </article>
+
+
+
+   <!-- end of single project -->
+   <!-- single project -->
+   <article class="projects__single-project">
+    <img src="ecell.png" alt="portfolio" class="projects__single-project-img">
+    <a href="https://github.com/sajalgupta1/E-Cell_DTU" class="projects__single-project-icon">
+     <img src="search.png" alt="portfolio" class="projects__single-project-img">
+    </a>
+   </article>
+
+
+
+   <!-- end of single project -->
+   <!-- single project -->
+   <article class="projects__single-project">
+    <img src="esummit.png" alt="portfolio" class="projects__single-project-img">
+    <a href="https://github.com/sajalgupta1/E-Summit_DTU" class="projects__single-project-icon"><img src="search.png" alt="portfolio" class="projects__single-project-img">
+    </a>
+   </article>
+
+
+
+   <!-- end of single project -->
+  </div>
+ </section>
+ <!-- end of projects section -->
+ <!-- contact section -->
+ <section id="contact"class="contact">
+  <!-- section title -->
+  
+  <!-- end of section title -->
+  <div class="contact__center">
+   <form id="contact-form" action="mailto:sajal.gupta6397@gmail.com">
+ <div class="footer__icons">
+   <a href="https://github.com/sajalgupta1" class="footer__single-icon">
+    <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+   </a>
+   <!--<a href="https://github.com/sajalgupta1" class="footer__single-icon">
+    <i class="fa fa-twitter"></i>
+   </a>-->
+   <button height="10" type="submit" class="contact__btn">
+     <span class="contact__icon">
+      <i class="fa fa-paper-plane"></i>
+     </span>
+     send message
+    </button>  </form>
+   <!--<a href="https://github.com/sajalgupta1" class="footer__single-icon">
+    <i class="fa fa-instagram"></i>
+   </a>-->
+   <a href="https://www.linkedin.com/in/sajalgupta63" class="footer__single-icon">
+    <i class="fa fa-linkedin fa-2x"></i>
+   </a>
+  
+    
+    </div>
+ 
+  </div>
+ </section>
+ <!-- end of contact section -->
+ <!-- footer -->
+ <footer class="footer">
+  <div>
+  <h3 align="center">©️Sajal Gupta'2020</h3></div>
+ </footer>
+
 </body>
+
 </html>
